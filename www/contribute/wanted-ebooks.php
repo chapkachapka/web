@@ -31,22 +31,16 @@
 				<p><a href="https://www.gutenberg.org/ebooks/18817">Ralestone Luck</a> by Andre Norton</p>
 			</li>
 			<!-- <li>
-				<p><a href="https://www.gutenberg.org/ebooks/51804">Plague of Pythons</a> by Frederik Pohl</p>
-			</li> -->
-			<!-- <li>
 				<p><a href="https://www.gutenberg.org/ebooks/7464">The Adventures of Sally</a> by P. G. Wodehouse</p>
-			</li> -->
-			<!-- <li>
-				<p><a href="https://www.gutenberg.org/ebooks/6927">The White Feather</a> by P. G. Wodehouse</p>
 			</li> -->
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/6880">The Coming of Bill</a> by P. G. Wodehouse</p>
 			</li>
-			<li>
+			<!-- <li>
 				<p><a href="https://www.gutenberg.org/ebooks/6683">The Little Nugget</a> by P. G. Wodehouse</p>
-			</li>
+			</li> -->
 			<li>
-				<p><a href="https://www.gutenberg.org/ebooks/149">Beyond Thirty aka. The Lost Continent</a> (Beyond 1) by Edgar Rice Burroughs</p>
+				<p><a href="https://www.gutenberg.org/ebooks/149">Beyond Thirty A.K.A. The Lost Continent</a> (Beyond 1) by Edgar Rice Burroughs</p>
 			</li>
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/363">The Oakdale Affair</a> (Mucker 3) by Edgar Rice Burroughs</p>
@@ -105,15 +99,9 @@
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/8939">With Edged Tools</a> by Henry Seton Merriman</p>
 			</li>
-			<!-- <li>
-				<p><a href="https://www.gutenberg.org/ebooks/11228">The Marrow of Tradition</a> by Charles W. Chesnutt</p>
-			</li> -->
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/8101">Bertram Cope’s Year</a> by Henry Blake Fuller</p>
 			</li>
-			<!-- <li>
-				<p><a href="https://www.gutenberg.org/ebooks/70652">At the Mountains of Madness</a> by H. P. Lovecraft</p>
-			</li> -->
 			<!-- <li>
 				<p><a href="https://www.gutenberg.org/ebooks/77">The House of the Seven Gables</a> by Nathaniel Hawthorne</p>patron
 			</li> -->
@@ -144,18 +132,15 @@
 			<li>
 				<p><a href="https://gutenberg.org/ebooks/393">The Blue Lagoon</a> by Henry De Vere Stacpoole</p><!--patron-->
 			</li>
-			<li>
-				<p><a href="https://gutenberg.org/ebooks/8677">Behind a Mask</a> by Louisa May Alcott</p><!--patron-->
-			</li>
 		</ul>
 		<h2>Moderate-difficulty productions</h2>
 		<ul>
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/17957">On the Sublime</a> by Longinus</p>
 			</li>
-			<li>
+			<!-- <li>
 				<p><a href="https://www.gutenberg.org/ebooks/1951">The Coming Race</a> by Edward Bulwer-Lytton</p>
-			</li>
+			</li> -->
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/4023">Candida</a> by George Bernard Shaw</p><!--patron-->
 			</li>
@@ -165,9 +150,6 @@
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/56426">The Mummy! A Tale of the Twenty-Second Century</a> by Jane C. Loudon</p>
 			</li>
-			<!-- <li>
-				<p><a href="https://www.gutenberg.org/ebooks/434">The Circular Staircase by Roberts Rineheart</a></p>patron
-			</li> -->
 			<li>
 				<p><a href="https://theotherpages.org/poems/poem-mn.html#macaulay">Poetry by Thomas Macaulay</a> including <i>Lays of Ancient Rome</i></p>
 			</li>
@@ -190,17 +172,11 @@
 				<p><a href="https://theanarchistlibrary.org/library/petr-kropotkin-memoirs-of-a-revolutionist">Memoirs of a Revolutionist</a> by Peter Kropotkin</p>
 			</li>
 			<li>
-				<p><a href="https://www.gutenberg.org/ebooks/3268">The Mysteries of Udolpho</a> by Ann Ward Radcliffe (#32 in <a href="https://standardebooks.org/collections/the-telegraphs-greatest-villains-in-literature">Greatest Villains</a>)</p>
-			</li>
-			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/author/8301">Short fiction by H. Beam Piper</a></p>
 			</li>
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/author/7021">Short fiction by Andre Norton</a></p>
 			</li>
-			<!-- <li>
-				<p><a href="https://www.gutenberg.org/ebooks/331">The Mucker</a> (Mucker 1) by Edgar Rice Burroughs</p>
-			</li> -->
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/36483">William Meister’s Apprenticeship</a> by Johann Wolfgang von Goethe (<a href="https://books.google.com/books?id=HIxaAAAAYAAJ">Page scans</a>)</p>
 			</li>
@@ -259,12 +235,6 @@
 				<p><a href="https://www.gutenberg.org/ebooks/2194">Mauprat</a> by George Sand</p>
 			</li>
 			<!-- <li>
-				<p><a href="https://www.gutenberg.org/ebooks/11752">Chivalry</a> by James Branch Cabell (Note: the 1921 version)</p>
-			</li> -->
-			<li>
-				<p><a href="https://www.gutenberg.org/ebooks/9608">The Cords of Vanity</a> by James Branch Cabell</p>
-			</li>
-			<!-- <li>
 				<p><a href="https://www.gutenberg.org/ebooks/3091">Eight Hundred Leagues on the Amazon</a> <i>La Jangada</i> by Jules Verne</p>
 			</li> -->
 			<li>
@@ -321,8 +291,11 @@
 			<li>
 				<p>Norwegian Folktales, by Peter Christen Asbjørnsen and Jørgen Moe, translated by George Dasent (<a href="https://gutenberg.org/ebooks/8933">part 1</a>, <a href="https://gutenberg.org/ebooks/36385">part 2</a>)</p>
 			</li>
-			<li>
+			<!-- <li>
 				<p><a href="https://www.gutenberg.org/ebooks/3420">A Vindication of the Rights of Woman</a> by Mary Wollstonecraft</p>
+			</li> -->
+			<li>
+				<p><a href="https://en.wikipedia.org/wiki/F._Scott_Fitzgerald_bibliography#Short_story_collections">Short stories by F. Scott Fitzgerald</a></p>
 			</li>
 		</ul>
 		<h2>Advanced productions</h2>
@@ -365,9 +338,6 @@
 			</li>
 			<li>
 				<p><a href="https://en.m.wikipedia.org/wiki/Pastors_and_Masters">Pastors and Masters</a> by Ivy Compton-Burnett (transcription required)</p>
-			</li>
-			<li>
-				<p><a href="https://en.wikipedia.org/wiki/Langston_Hughes#Bibliography">Poetry</a> by Langston Hughes. Research is required to see if we need an omnibus.</p><!--patron-->
 			</li>
 			<li>
 				<p><a href="https://www.gutenberg.org/ebooks/32474">The Memoirs of the Conquistadors</a> by Bernal Díaz del Castillo (<a href="https://www.gutenberg.org/ebooks/32475">Volume 2</a>)</p>
@@ -519,6 +489,12 @@
 			<li>
 				<p><a href="https://en.wikipedia.org/wiki/Dark_Princess">Dark Princess</a> by W. E. B. Du Bois (PD 1928; transcription require)</p>
 			</li>
+			<li>
+				<p><a href="https://archive.org/stream/in.ernet.dli.2015.210843/2015.210843.Tarka-The_djvu.txt">Tarka the Otter</a> by Henry Williamson (transcription required)</p>
+			</li><!--patron-->
+			<li>
+				<p><a href="https://www.gutenberg.org/ebooks/4361">Memoirs of General William T. Sherman</a> by William T. Sherman</p>
+			</li><!--patron-->
 		</ul>
 		<h2 id="verne">Jules Verne</h2>
 		<p>Verne has a complex publication and translation history. Please review these notes before starting any Verne books.</p>

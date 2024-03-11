@@ -3,7 +3,7 @@ use function Safe\parse_url;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
-class Museum extends PropertiesBase{
+class Museum extends Accessor{
 	public int $MuseumId;
 	public string $Name;
 	public string $Domain;
@@ -90,7 +90,7 @@ class Museum extends PropertiesBase{
 			return $outputUrl;
 		}
 		elseif(preg_match('/\bnationalmuseum\.se$/ius', $parsedUrl['host'])){
-			$exampleUrl = 'https://collection.nationalmuseum.se/eMP/eMuseumPlus?objectId=18217';
+			$exampleUrl = 'https://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=18217';
 
 			if($parsedUrl['host'] != 'collection.nationalmuseum.se'){
 				throw new Exceptions\InvalidMuseumUrlException($url, $exampleUrl);
@@ -110,7 +110,7 @@ class Museum extends PropertiesBase{
 				throw new Exceptions\InvalidPageScanUrlException($url, $exampleUrl);
 			}
 
-			$outputUrl = 'https://' . $parsedUrl['host'] . $parsedUrl['path'] . '?objectId=' . $vars['objectId'];
+			$outputUrl = 'https://' . $parsedUrl['host'] . $parsedUrl['path'] . '?service=ExternalInterface&module=collection&objectId=' . $vars['objectId'];
 
 			return $outputUrl;
 		}

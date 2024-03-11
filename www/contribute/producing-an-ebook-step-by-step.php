@@ -4,7 +4,7 @@
 		<h1>Producing an Ebook, Step by Step</h1>
 		<p>This guide is meant to take you step-by-step through the creation of a complete Standard Ebook. While it might seem a little long, most of the text is a description of how to use various automated scripts. It can take just an hour or two for an experienced producer to produce a draft ebook for proofreading (depending on the complexity of the ebook, of course).</p>
 		<p>Our toolset is GNU/Linux-based, and producing an ebook from scratch currently requires working knowledge of the epub file format and of Unix-like systems like Mac or Linux.</p>
-		<p>Our toolset doesn’t yet work natively on Windows, but there are <a href="https://www.howtogeek.com/170870/5-ways-to-run-linux-software-on-windows/">many ways to run Linux from within Windows</a>, including <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">one that is directly supported by Microsoft themselves</a>.</p>
+		<p>Our toolset doesn’t yet work natively on Windows, but there are <a href="https://www.howtogeek.com/170870/5-ways-to-run-linux-software-on-windows/">many ways to run Linux from within Windows</a>, including <a href="https://learn.microsoft.com/en-us/windows/wsl/install">one that is directly supported by Microsoft themselves</a>.</p>
 		<p>If you don’t have this kind of technical expertise, you can still contribute! <a href="/contribute">Check out our contributors page for details,</a> or check out <a href="https://b-t-k.github.io/">Standard Ebooks Hints and Tricks</a>, a beginner’s guide by one of our editors.</p>
 		<aside class="alert">
 			<p class="warning">Before you begin</p>
@@ -369,7 +369,7 @@ proceed to seal up my confession, I bring the life of that unhappy Henry Jekyll 
 				</aside>
 				<h3>Modernize spacing in select words</h3>
 				<p>Over time, spelling of certain common two-word phrases has evolved into a single word. For example, <code class="html">someone</code> used to be the two-word phrase <code class="html">some one</code>, which would read awkwardly to modern readers. This is our chance to modernize such phrases.</p>
-				<p>Note that we use <code class="bash"><b>se</b> interactive-replace</code> to perform an interactive search and replace, instead of doing a global, non-interactive search and replace. This is because some phrases caught by the regular expression should not be changed, depending on context. For example, <code class="html">some one</code> in the following snippet from <a href="/ebooks/anton-chekhov/short-fiction/constance-garnett/">Anton Chekhov’s short fiction</a> <em>should not</em> be corrected:</p>
+				<p>Note that we use <code class="bash"><b>se</b> interactive-replace</code> to perform an interactive search and replace, instead of doing a global, non-interactive search and replace. This is because some phrases caught by the regular expression should not be changed, depending on context. For example, <code class="html">some one</code> in the following snippet from <a href="/ebooks/anton-chekhov/short-fiction/constance-garnett">Anton Chekhov’s short fiction</a> <em>should not</em> be corrected:</p>
 				<blockquote>
 					<p>He wanted to think of some one part of nature as yet untouched...</p>
 				</blockquote>
@@ -640,8 +640,7 @@ proceed to seal up my confession, I bring the life of that unhappy Henry Jekyll 
 					</li>
 				</ul>
 				<aside class="tip">
-					<p>At the moment <abbr>S.E.</abbr> doesn't have a centralized list of previously-used covers, but you can search our GitHub repos by artist name instead using this query: <code class="path">owner:standardebooks path:src/epub/text/colophon.xhtml name.visual-art.painting ARTIST_NAME</code></p>
-					<p>Here’s a link to an example search for <a href="https://github.com/search?q=owner%3Astandardebooks+path%3Asrc%2Fepub%2Ftext%2Fcolophon.xhtml+name.visual-art.painting+Repin&amp;type=code"><abbr>S.E.</abbr> covers featuring art by Russian artist Ilya Repin</a>.</p>
+					<p>Make sure to read our detailed guide on <a href="/contribute/how-tos/how-to-choose-and-create-a-cover-image">how to choose and create a cover image</a>, including tips and tricks, gotchas, and resources for finding suitable cover art.</p>
 				</aside>
 				<p>What can we use for <i>Jekyll</i>? In 1863 Hans von Marées painted an <a href="https://commons.wikimedia.org/wiki/File:Hans_von_Mar%C3%A9es_-_Double_Portrait_of_Mar%C3%A9es_and_Lenbach_-_WGA14059.jpg">eerie self-portrait with a friend</a>. The sallow, enigmatic look of the man on the left suggests the menacing personality of Hyde hiding just behind the sober Jekyll. It was <a href="https://books.google.com/books?id=etcwAQAAMAAJ&amp;pg=PA336">reproduced in a book published in 1910</a>.</p>
 				<p>The cover file itself, <code class="path">./images/cover.svg</code>, is easy to edit. It automatically links to <code class="path">./images/cover.jpg</code>. All you have to do is open <code class="path">cover.svg</code> with a text editor and edit the title and author. Make sure you have the League Spartan font installed on your system!</p>

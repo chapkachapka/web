@@ -34,7 +34,7 @@ use function Safe\preg_replace;
  * @property ?ImageMimeType $MimeType
  * @property ?array<ArtworkTag> $_Tags
  */
-class Artwork extends PropertiesBase{
+class Artwork extends Accessor{
 	public ?string $Name = null;
 	public ?int $ArtworkId = null;
 	public ?int $ArtistId = null;
@@ -267,7 +267,7 @@ class Artwork extends PropertiesBase{
 		try{
 			list($imageWidth, $imageHeight) = getimagesize($this->ImageFsPath);
 			if($imageWidth && $imageHeight){
-				$this->_Dimensions = $imageWidth . ' × ' . $imageHeight;
+				$this->_Dimensions = number_format($imageWidth) . ' × ' . number_format($imageHeight);
 			}
 		}
 		catch(Exception){
@@ -356,6 +356,16 @@ class Artwork extends PropertiesBase{
 	 * @throws \Exceptions\ValidationException
 	 */
 	protected function Validate(?string $imagePath = null, bool $isImageRequired = true): void{
+		// TODO: Remove this block once all legacy artworks are fixed up
+		// If this is tagged with 'fixup' and we're the admin user, skip validation
+		if($GLOBALS['User']?->Benefits->CanReviewOwnArtwork){
+			foreach($this->Tags as $tag){
+				if($tag->Name == 'fixup'){
+					return;
+				}
+			}
+		}
+
 		$now = new DateTime('now', new DateTimeZone('UTC'));
 		$thisYear = intval($now->format('Y'));
 		$error = new Exceptions\ValidationException();
@@ -497,12 +507,12 @@ class Artwork extends PropertiesBase{
 			$error->Add(new Exceptions\MissingPdProofException());
 		}
 
-		// Check the ebook www filesystem path.
+		// Check the ebook URL.
 		// We don't check if it exists, because the book might not be published yet.
-		// But we do a basic check that the string includes one _. It might not include a dash, for example anonymous_poetry
+		// But we do a basic check that URL has the correct prefix and that it contains a slash between the author(s) and title.
 		if($this->EbookUrl !== null){
 			if(!preg_match('|^https://standardebooks.org/ebooks/[^/]+?/[^/]+?|ius', $this->EbookUrl)){
-				$error->Add(new Exceptions\EbookNotFoundException('Invalid ebook. Expected S.E. URL.'));
+				$error->Add(new Exceptions\EbookNotFoundException('Invalid ebook URL. Check that it matches the URL in dc:identifier.'));
 			}
 		}
 
@@ -547,6 +557,9 @@ class Artwork extends PropertiesBase{
 	public static function NormalizePageScanUrl(string $url): string{
 		$outputUrl = $url;
 
+		// Before we start, replace Google TLDs like google.ca with .com
+		$url = preg_replace('|^(https://[^/]+?\.google)\.[^/]+/|ius', '\1.com/', $url);
+
 		try{
 			$parsedUrl = parse_url($url);
 		}
@@ -575,7 +588,7 @@ class Artwork extends PropertiesBase{
 				throw new Exceptions\InvalidPageScanUrlException($url, $exampleUrl);
 			}
 
-			$outputUrl = 'https://' . $parsedUrl['host'] . $parsedUrl['path'] . '?id=' . $vars['id'] . '&seq=' . $vars['seq'];
+			$outputUrl = 'https://' . $parsedUrl['host'] . $parsedUrl['path'] . '?id=' . $vars['id'] . '&view=1up&seq=' . $vars['seq'];
 
 			return $outputUrl;
 		}
